@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #080820,
+    #103b63,
+    #341052
+  );
+}
+
+.game {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  text-align: center;
+  background: #0b1533;
+  border: 2px solid #00eaff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #00bfff55;
+}
+
+h1 {
+  color: #00f0ff;
+  text-shadow: 0 0 12px #00cfff;
+}
+
+h2 {
+  color: #a9dfff;
+}
+
+#status {
+  color: #a9dfff;
+  font-size: 14px;
+}
+
+#story {
+  line-height: 1.8;
+  margin: 25px 0;
+  min-height: 90px;
+}
+
+#choices {
+  display: grid;
+  gap: 12px;
+}
+
+button {
+  padding: 14px;
+  color: white;
+  background: #15365d;
+  border: 1px solid #00eaff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #087c9d;
+  transform: scale(1.02);
+}
+
+#ending {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.lose {
+  color: #ff6262;
+}
+
+.win {
+  color: #00ffb3;
+}
+
+.alt {
+  color: #ffdc69;
+}
+
+.restart {
+  margin-top: 20px;
+  background: #075b4b;
+  border-color: #00ffb3;
+}
+
+.restart:hover {
+  background: #087e65;
+}
