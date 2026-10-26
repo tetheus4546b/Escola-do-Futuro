@@ -1,26 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escola do Futuro - Missão 2050</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escola do Futuro</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <main class="game">
-    <h1>🚀 Escola do Futuro</h1>
-    <h2>Missão 2050</h2>
 
-    <p id="status">Preparando a missão...</p>
-    <div id="story"></div>
-    <div id="choices"></div>
-    <div id="ending"></div>
+    <div class="background"></div>
 
-    <button id="restart" class="restart">
-      🔄 Jogar novamente
-    </button>
-  </main>
+    <main class="game-container">
+
+        <header>
+            <p class="subtitle">PROJETO ESCOLAR • ANO 2085</p>
+            <h1>ESCOLA DO FUTURO</h1>
+            <p class="description">
+                O conhecimento é poder. Mas toda escolha tem consequências.
+            </p>
+        </header>
+
+        <section class="game-box">
+
+            <div class="status">
+                <span id="route-label">ROTA: NÃO DEFINIDA</span>
+                <span id="scene-label">CAPÍTULO 01</span>
+            </div>
+
+            <div class="story-image">
+                <span id="story-icon">🏫</span>
+            </div>
+
+            <h2 id="story-title">Bem-vindo ao futuro</h2>
+
+            <p id="story-text">
+                O ano é 2085. Você acaba de chegar à escola mais tecnológica
+                do planeta. Está pronto para descobrir o que ela esconde?
+            </p>
+
+            <div id="choices" class="choices"></div>
+
+            <button id="restart-button" class="restart-button" hidden>
+                ↻ Reiniciar jogo
+            </button>
+
+        </section>
+
+        <footer>
+            <p>ESCOLA DO FUTURO © 2085</p>
+            <p>Uma aventura em que suas escolhas importam.</p>
+        </footer>
+
+    </main>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
